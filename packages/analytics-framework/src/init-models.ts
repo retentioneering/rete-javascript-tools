@@ -1,0 +1,8 @@
+import './dom-events-tracker/init'
+import './dom-observers-tracker/init'
+import './page-state-tracker/init'
+import './user/init'
+import './event-metadata/init'
+import './cookie-storage/init'
+import '~/marketing-session/model/init'
+import './third-party-cookie-storage/init'

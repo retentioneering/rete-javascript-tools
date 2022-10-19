@@ -1,0 +1,40 @@
+{
+  "name": "@rete-internal/rollup-plugin-filesize",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn clean && rollup -c",
+    "clean": "rimraf dist",
+    "lint": "eslint src",
+    "type-check": "tsc --pretty --noEmit"
+  },
+  "dependencies": {
+    "cli-table": "0.3.11",
+    "colorette": "2.0.19",
+    "filesize": "10.0.5",
+    "pacote": "15.0.3",
+    "terser": "5.15.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-eslint": "8.0.5",
+    "@types/cli-table": "0.3.1",
+    "@types/node": "18.11.2",
+    "@types/pacote": "11.1.5",
+    "eslint": "8.25.0",
+    "rimraf": "3.0.2",
+    "rollup": "3.2.3",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-plugin-ts": "3.0.2",
+    "tslib": "2.4.0",
+    "typescript": "4.8.4"
+  },
+  "peerDependencies": {
+    "rollup": "^2.57.0 || ^3.0.0"
+  }
+}

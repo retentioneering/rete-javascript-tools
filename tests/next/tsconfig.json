@@ -1,0 +1,17 @@
+{
+  "extends": "../../configs/tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "preserve",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    },
+    "types": ["cypress", "node"],
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": [".next", "next.config.js"]
+}
